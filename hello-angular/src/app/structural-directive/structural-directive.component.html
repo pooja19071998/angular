@@ -1,0 +1,39 @@
+<p>structural-directive works!</p>
+<h1>NgIf Directive</h1>
+<div *ngIf="isDisplay">
+    <h4>If Block</h4>
+</div>
+
+<h1>NgIf and else Example</h1>
+<div *ngIf="isDisplay; else elseBlock">
+    <h4>If Block</h4>
+</div>
+<ng-template #elseBlock>
+    <h4>Else Block</h4>
+</ng-template>
+
+<h1>Another Syntax to display if and else block</h1>
+<div *ngIf="isDisplay; then ifBlock; else elseBlock">
+
+</div>
+<ng-template #ifBlock>
+    <h4>IfBlock</h4>
+</ng-template>
+<ng-template #elseBlock>
+    <h4>ElseBlock</h4>
+</ng-template>
+
+
+<h1>Example for ngSwitch</h1>
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">you picked red color</p>
+    <p *ngSwitchCase="'blue'">you picked blue color</p>
+    <p *ngSwitchCase="'green'">you picked green color</p>
+</div>
+
+<h1>Example for ngFor</h1>
+<div *ngFor="let color of colors, index as i, first as f, last as l, odd as o, even as e">
+    <p>
+        {{i+" "}}{{color+" "}}{{f+" "}}{{l+" "}}{{o+" "}}{{e}}
+    </p>
+</div>

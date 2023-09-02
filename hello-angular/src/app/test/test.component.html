@@ -1,0 +1,21 @@
+<p>test works!</p>
+<div class="divForClassAttributeDirective">
+    <h1>Example for Attribute Directives</h1>
+    <p [class.color]="isColor">class binding to add or remove the class</p>
+    <button (click)="onClick()">Click to color change</button>
+    <p [class]="stringClassExample"> String class example</p>
+    <p [class]="objectClassExample">Object class example</p>
+    <p [class]="arrayClassExample">Arrays Class example</p>
+    <p [ngClass]="ngClassExample">ngClass example</p>
+    <p [ngClass]="methodToClass()">Method example to add class</p>
+</div>
+<div class = "divForStyleAttributeDirective">
+<p [style.color]="'green'">single style binding</p>
+<p style="color:red ;font-style:italic"> style property </p>
+<p [ngStyle]="isStyle ? {background: '#f4f4f4', border: '1px solid #dcdcdc','font-size.px': 20 }: null">style property binding</p>
+<p [ngStyle]="isStyle ? {color:'black','font-style':'italic'}:null">using ternarry operator</p>
+<p [ngStyle]="objectForStyle">Example for object in style property</p>
+<p [ngStyle]="methodForStyle()">Used method in style attribute</p>
+
+<p></p>
+</div>

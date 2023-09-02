@@ -1,0 +1,13 @@
+
+<h1 [ngClass]="classExpression">{{title}}</h1>
+
+<div [ngClass]="setCurrentClasses()">This div is initially saveable, unchanged, and special.</div>
+<div [ngStyle]="setCurrentStyles()">Example for ngStyle</div>
+<div [ngStyle]="setCurrentStyles1()">Another Example to use method for ngStyle</div>
+
+<div style="background-color: aqua;text-align: center;">
+    <app-test></app-test>
+</div>
+<div  style="background-color: rgb(119, 147, 168);text-align: center;">
+    <app-structural-directive></app-structural-directive>
+</div>

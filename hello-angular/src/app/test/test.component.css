@@ -1,0 +1,20 @@
+.divForClassAttributeDirective{
+    background-color: blanchedalmond;
+    width: 50%;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+}
+.color{
+    color: blue;
+}
+.italic{
+    font-style: italic;
+}
+.divForStyleAttributeDirective{
+    background-color: rgb(223, 216, 179);
+    width: 50%;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+}

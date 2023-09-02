@@ -1,0 +1,7 @@
+<h1>Parent Component</h1>
+<h2>{{message}}</h2>
+<input #inputValue type="text" value="Enter parent Data">
+<button style="margin: 10px;" (click)="onClick(inputValue.value)">Click me to send Data</button>
+<div style="background-color: antiquewhite;">
+  <app-child (childEvent)="message=$event" [parentData]="name"></app-child>
+</div>

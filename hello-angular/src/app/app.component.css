@@ -1,0 +1,18 @@
+.blueColor{
+    color:blue;
+}
+.italicStyle{
+    font-style: italic;
+}
+.saveable{
+background-color: green;
+}
+.modified{
+color: yellow;
+}
+.special{
+    font-style: italic;
+}
+/* div{
+    color:white;
+} */
